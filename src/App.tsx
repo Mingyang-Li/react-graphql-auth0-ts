@@ -32,6 +32,7 @@ const App: React.FC = () => {
   const client = new ApolloClient({
     link: new HttpLink({
       uri: process.env.REACT_APP_API_URL,
+      // In most cases, your API has private routes. Hence we add auth header to our apollo client:)
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -43,6 +44,8 @@ const App: React.FC = () => {
   else if (isLoading) return <Loading />;
   else if (token !== '') {
     const decodedUser: DecodedJwt = jwt(token);
+    // You can define your OWN rules for when to block user from accessing certain pages depending on their auth token after decode
+    // For my case, I simply blocked everyone who doesn't have custom permission scopes defined from Auth0 management panel
     if (decodedUser.permissions?.length === 0) return <Forbidden />;
   }
   return (
