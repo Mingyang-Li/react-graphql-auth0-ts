@@ -1,6 +1,6 @@
 # React GraphQL Auth0 template
 
-## Opinionated admin dashboard template for building your next internal app using React, Apollo client, Auth0, material-ui and tailwind 
+### Opinionated admin dashboard template for building your next internal app using React, Apollo client, Auth0, material-ui and tailwind 
 
 ### 🛠️ Technologies used
 | Purpose | Tools |
@@ -13,7 +13,7 @@
 | ✅ Styling - structure | Material-UI |
 | ✅ Styling - details | TailwindCSS |
 
-### ⭐ Heature highlights
+### ⭐ Feature highlights
 | No. | Description |
 | :--- | :---- |
 | 1. | Logging in with Google using Auth0 |
