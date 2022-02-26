@@ -26,6 +26,7 @@ const Dashboard: React.FC = () => {
           Welcome back, {user?.name} - {user?.email}
         </h2>
         <Button onClick={copyToken}>Copy Token</Button>
+      </Container>
     </>
   );
 };

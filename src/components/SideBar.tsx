@@ -39,7 +39,7 @@ export default function SideBar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Income', 'Expenses'].map((text, index) => (
+        {['Item 1', 'Item 2'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
               {index % 2 === 0 ? <PaidIcon /> : <ShoppingCartIcon />}

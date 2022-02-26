@@ -23,7 +23,7 @@ function Copyright(props: any) {
     >
       {'Copyright © '}
       <Link color="inherit" href="#">
-        MoneyApp
+        Your app
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
